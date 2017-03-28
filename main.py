@@ -38,11 +38,11 @@ def main():
                 continue
             wordpairs.append((copy.deepcopy(line[0]), copy.deepcopy(line[1]), copy.deepcopy(float(line[2]))))
 
-        #sim_wordnet(wordpairs, filenames[i])
-        #sim_word2vec(wordpairs, filenames[i])
-        #sim_pagecount(wordpairs, filenames[i])
-        #rank_results=rank_spearman(wordpairs, filenames[i])
-        #rank_writer.writerows(rank_results)
+        sim_wordnet(wordpairs, filenames[i])
+        sim_word2vec(wordpairs, filenames[i])
+        sim_pagecount(wordpairs, filenames[i])
+        rank_results=rank_spearman(wordpairs, filenames[i])
+        rank_writer.writerows(rank_results)
 
     for csvfile in files:
         csvfile.close()
