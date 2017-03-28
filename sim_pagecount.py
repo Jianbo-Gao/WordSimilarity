@@ -97,9 +97,9 @@ def sim_pagecount(wordpairs, filename):
                     print e
                     cache[pandqstr]=0
 
-            p=cache[pstr]
-            q=cache[qstr]
-            pandq=cache[pandqstr]
+            p=int(cache[pstr])
+            q=int(cache[qstr])
+            pandq=int(cache[pandqstr])
 
             webjaccard_sim = 0
             weboverlap_sim = 0
@@ -111,29 +111,10 @@ def sim_pagecount(wordpairs, filename):
 
             # c=5 is from Paper http://www.ijcsi.org/papers/IJCSI-10-2-1-391-396.pdf
             if pandq > 5:
-                try:
-                    webjaccard_sim = 1.0*pandq/(p+q-pandq)
-                except Exception, e:
-                    print p, q, pandq
-                    webjaccard_sim = -10000
-
-                try:
-                    weboverlap_sim = 1.0*pandq/min(p, q)
-                except Exception, e:
-                    print p, q, pandq
-                    weboverlap_sim = -10000
-
-                try:
-                    webdice_sim = 2.0*pandq/(p+q)
-                except Exception, e:
-                    print p, q, pandq
-                    webdice_sim = -10000
-
-                try:
-                    webpmi_sim = math.log((1.0*pandq*googlepages)/(p*q),2)
-                except Exception, e:
-                    print p, q, pandq
-                    webpmi_sim = -10000
+                webjaccard_sim = 1.0*pandq/(p+q-pandq)
+                weboverlap_sim = 1.0*pandq/min(p, q)
+                webdice_sim = 2.0*pandq/(p+q)
+                webpmi_sim = math.log((1.0*pandq*googlepages)/(p*q),2)
 
             webjaccard_result=(wordpair[0], wordpair[1], webjaccard_sim)
             weboverlap_result=(wordpair[0], wordpair[1], weboverlap_sim)
