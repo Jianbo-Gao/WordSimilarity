@@ -14,11 +14,6 @@ Python 2.7 on Linux (Ubuntu recommanded)
 
 Socks Proxy ([ShadowSocks](https://github.com/shadowsocks/shadowsocks) recommanded)
 
-# TODO
-SVM method
-
-Spearman Rank Correlation Coefficient
-
 ---
 
 Used For [SCKR2017@PKU](http://www.icst.pku.edu.cn/lcwm/course/sckr2017/)

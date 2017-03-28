@@ -14,4 +14,7 @@ RESULT_PREFIXS=[
     "pagecount/webjaccard_", "pagecount/weboverlap_",
     "pagecount/webdice_", "pagecount/webpmi_"
     ]
+
 RESULT_POSTFIXS=["set1.csv", "set2.csv"]
+
+

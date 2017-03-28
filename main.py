@@ -41,8 +41,8 @@ def main():
         #sim_wordnet(wordpairs, filenames[i])
         #sim_word2vec(wordpairs, filenames[i])
         #sim_pagecount(wordpairs, filenames[i])
-        rank_results=rank_spearman(wordpairs, filenames[i])
-        rank_writer.writerows(rank_results)
+        #rank_results=rank_spearman(wordpairs, filenames[i])
+        #rank_writer.writerows(rank_results)
 
     for csvfile in files:
         csvfile.close()
