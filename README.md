@@ -18,4 +18,4 @@ Socks Proxy ([ShadowSocks](https://github.com/shadowsocks/shadowsocks) recommand
 
 Used For [SCKR2017@PKU](http://www.icst.pku.edu.cn/lcwm/course/sckr2017/)
 
-More details please read WordSimilarity.docx.
+More details please read WordSimilarity Report.pdf
